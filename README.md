@@ -86,7 +86,7 @@ This is a personal project aimed at portfolio-building and showcasing software d
 👩‍💻 Author
 Marion Tamnai
 📧 mariontamnai@gmail.com
-🌐 Portfolio: [Add your portfolio URL here]
+🌐 Portfolio:
 💼 GitHub: @mariontamnai
 
  📝 License
