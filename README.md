@@ -1,97 +1,70 @@
- 🎬 FilmSpot – Movie Search App
+# Getting Started with Create React App
 
-FilmSpot is a sleek and responsive web application that lets users search for movies, view detailed information (like poster, rating, release date, and synopsis), and discover trending titles — all in one place.  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is built as a **real-world, production-ready app** to showcase front-end and full-stack skills for professional opportunities.
+## Available Scripts
 
- 🚀 Live Demo
+In the project directory, you can run:
 
-🔗 [View FilmSpot on Vercel](https://your-vercel-link.vercel.app)  
-*(Will be added after deployment)*
+### `npm start`
 
- 📁 Project Structure
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-filmspot/
-├─ src/
-│ ├─ components/
-│ ├─ pages/
-│ ├─ utils/
-│ └─ styles/
-├─ public/
-└─ README.md
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
- ✨ Features
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- 🔍 **Search Movies:** Instantly find movies by title using a real API.  
-- 📄 **Movie Details:** View posters, ratings, synopsis, genres, and more.  
-- 📱 **Responsive UI:** Fully responsive and mobile-friendly design.  
-- ⚠️ **Error Handling:** User-friendly messages for empty results or API errors.  
-- 🪩 **Clean UX:** Smooth transitions, modern design, and intuitive interface.
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
- 🧑‍💻 Tech Stack
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- **Frontend:** HTML, CSS (Tailwind), JavaScript, React  
-- **Backend (optional):** Node.js  
-- **API:** OMDb / TMDB (to fetch movie data)  
-- **Deployment:** Vercel
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
- 📦 Installation & Setup
+### `npm run eject`
 
-Clone the repository:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-git clone https://github.com/mariontamnai/filmspot-movie-search.git
-cd filmspot-movie-search
-Install dependencies:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-npm install
-Start the development server:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-npm run dev
-Visit: http://localhost:3000
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-🧪 Testing
-Coming soon... (will include basic unit tests using Jest / React Testing Library)
+## Learn More
 
-📜 Documentation
-This project is being developed with a real-world production workflow, including:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-📚 Documentation & architecture overview
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-🧪 Testing & QA
+### Code Splitting
 
-🚀 Deployment & CI/CD
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-🧩 Future enhancements
+### Analyzing the Bundle Size
 
-A detailed developer documentation PDF will be added after core features are complete.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-📈 Roadmap
- Search movies by title
+### Making a Progressive Web App
 
- Display movie details
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
- Responsive UI
+### Advanced Configuration
 
- Add loading & error states
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
- Favorites / Watchlist feature
+### Deployment
 
- Trailer preview
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-🤝 Contributing
-This is a personal project aimed at portfolio-building and showcasing software development skills. Contributions are welcome — feel free to fork, open issues, or submit pull requests.
+### `npm run build` fails to minify
 
-👩‍💻 Author
-Marion Tamnai
-📧 mariontamnai@gmail.com
-🌐 Portfolio: [Add your portfolio URL here]
-💼 GitHub: @mariontamnai
-
- 📝 License
-
-This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.  
-You are free to use, modify, and distribute this project under the terms of the license.  
-See the [LICENSE](./LICENSE) file for full details.
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
