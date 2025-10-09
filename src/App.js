@@ -1,6 +1,8 @@
 import React, { useEffect, useState} from "react";
 import "./App.css";
 import {  fetchTrendingMovies, fetchMovies } from "./services/movieApi";
+import SearchBar from "./components/SearchBar";
+
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -37,18 +39,7 @@ function App() {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>🎬 FilmSpot</h1>
-      <input
-        type="text"
-        placeholder="Search movies..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{
-          padding: "10px",
-          width: "300px",
-          borderRadius: "5px",
-          border: "1px solid gray",
-        }}
-      />
+      <SearchBar value={query} onChange={setQuery} />
 
       {loading ? (
         <p>Loading...</p>
