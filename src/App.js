@@ -16,7 +16,7 @@ function App() {
     const loadTrending = async () => {
       setLoading(true);
       const trending = await fetchTrendingMovies();
-      setMovies(trending);
+      setTrendingMovies(trending);
       setLoading(false);
     };
     loadTrending();
@@ -60,7 +60,7 @@ function App() {
       
       {query && movies.length > 0 && (
         <div>
-          <h2 className="text-xl font-semibold mb-2">{query ? "Search Results" : "Trending Movies"}</h2>
+          <h2 className="text-xl font-semibold mb-2">Search Results</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {movies.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />
@@ -69,12 +69,12 @@ function App() {
         </div>
       )}
 
-      {!query && trendingMovies.length > 0 && (
+      {trendingMovies.length > 0 && !query && (
         <MovieRow title="Trending Movies" movies={trendingMovies} />
       )}
 
-      {!loading && movies.length === 0 && !query && (
-        <p className="text-gray-400">Search for a movie to begin...</p>
+      {!loading && query && movies.length === 0 && (
+        <p className="text-gray-400">No Results found for "{query}"</p>
       )}
     </main>
   </div>
