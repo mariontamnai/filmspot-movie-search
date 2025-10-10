@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000;
 }
 
 .App-logo {
@@ -36,6 +36,21 @@ ul {
 li {
   margin-bottom: 10px;
   font-size: 18px;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 

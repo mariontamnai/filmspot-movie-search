@@ -7,7 +7,7 @@ export default function AutoScrollRow({ children }) {
     const row = rowRef.current;
     if (!row) return;
 
-    const speed = 1; // pixels per frame
+    const speed = 0.5; // pixels per frame
     let animationFrame;
 
     const step = () => {
@@ -27,7 +27,7 @@ export default function AutoScrollRow({ children }) {
   return (
     <div
       ref={rowRef}
-      className="flex space-x-4 overflow-x-auto scrollbar-hide pb-2"
+      className=" relative flex space-x-4 overflow-x-auto scrollbar-hide pb-2"
     >
       {children}
     </div>
