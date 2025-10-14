@@ -54,5 +54,6 @@ export const fetchMovieDetails = async (movieId) => {
 
 export const fetchMovieVideos =async (movieId) => {
   const { data } = await api.get(`/movie/${movieId}/videos`);
-  return data.results;
+  return data.results.find(video => video.type === "Trailer" && video.site === "Youtube");
 };
+
