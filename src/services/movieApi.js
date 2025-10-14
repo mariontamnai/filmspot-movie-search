@@ -10,25 +10,24 @@ const api = axios.create({
   },
 });
 
-// Fetch trending movies
+
 export const fetchTrendingMovies = async () => {
   const { data } = await api.get("/trending/movie/week");
   return data.results;
 };
 
-// Fetch movies by category
 export const fetchMoviesByCategory = async (category) => {
   const { data } = await api.get(`/movie/${category}`);
   return data.results;
 };
 
-// Fetch genres
+
 export const fetchGenres = async () => {
   const { data } = await api.get("/genre/movie/list");
   return data.genres; 
 };
 
-// Fetch movies by genre ID
+
 export const fetchMoviesByGenre = async (genreId) => {
   const { data } = await api.get("/discover/movie", {
     params: { with_genres: genreId },
@@ -36,10 +35,24 @@ export const fetchMoviesByGenre = async (genreId) => {
   return data.results;
 };
 
-// Fetch movies by search query
+
 export const fetchMovies = async (query) => {
   const { data } = await api.get("/search/movie", {
     params: { query },
   });
+  return data.results;
+};
+
+export const fetchMovieDetails = async (movieId) => {
+  const { data } = await api.get(`/movie/${movieId}`, {
+    params: {
+      append_to_response: "videos"
+    }
+  });
+  return data;
+};
+
+export const fetchMovieVideos =async (movieId) => {
+  const { data } = await api.get(`/movie/${movieId}/videos`);
   return data.results;
 };
