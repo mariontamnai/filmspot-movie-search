@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { fetchMovieDetails, fetchMovieVideos } from "../services/movieApi";
 import TrailerModal from "../TrailerModal";
 
-export default function MovieDetails() {
+ function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [trailerKey, setTrailerKey] = useState(null);
@@ -12,17 +12,14 @@ export default function MovieDetails() {
   useEffect(() => {
     const loadMovie = async () => {
       try {
-        // Fetch movie details
         const data = await fetchMovieDetails(id);
         setMovie(data);
 
-        // Fetch movie trailer
         const videoData = await fetchMovieVideos(id);
         const trailerData = videoData?.results?.find(
           (video) => video.type === "Trailer" && video.site === "YouTube"
         );
 
-        // Set trailer key if found
         if (trailerData) {
           setTrailerKey(trailerData.key);
         }
@@ -83,3 +80,4 @@ export default function MovieDetails() {
     </div>
   );
 }
+export default MovieDetails;

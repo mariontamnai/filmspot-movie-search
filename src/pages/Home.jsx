@@ -9,6 +9,7 @@ import SearchBar from "../components/SearchBar";
 import MovieCard from "../components/MovieCard";
 import MovieRow from "../components/MovieRow";
 import GenreRow from "../components/GenreRow";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [query, setQuery] = useState("");
@@ -47,8 +48,14 @@ function Home() {
 
   return (
     <div className="bg-black min-h-screen text-white">
-      <header className="p-4 flex justify-center">
+      <header className="p-4 flex justify-between items-center">
         <SearchBar value={query} onChange={setQuery} onSubmit={handleSearch} />
+        <Link
+          to="/auth"
+          className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Login / Signup
+          </Link>
       </header>
 
       <main className="p-4 space-y-8">
