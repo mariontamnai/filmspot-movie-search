@@ -7,7 +7,7 @@ export default function AutoScrollRow({ children }) {
     const row = rowRef.current;
     if (!row) return;
 
-    const speed = 0.5; // pixels per frame
+    const speed = 0.5; 
     let animationFrame;
 
     const step = () => {
